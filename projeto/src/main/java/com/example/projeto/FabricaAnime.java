@@ -3,8 +3,8 @@ package com.example.projeto;
 public class FabricaAnime implements FabricaAbstrata {
 
     @Override
-    public Anime createAnime() {return new Anime();}
+    public Anime createAnime() {return new PacoteAnime();}
 
     @Override
-    public Dorama createDorama() {return new Dorama();}
+    public Dorama createDorama() {return new PacoteDorama();}
 }
