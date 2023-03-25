@@ -1,10 +1,10 @@
 package com.example.projeto;
 
-public class FabricaAnime implements FabricaAbstrata {
+public class FabricaAnime implements FabricaAbstrata{
 
     @Override
-    public Anime createAnime() {return new PacoteAnime();}
+    public Pacote createPacote() {return new PacoteAnime();}
 
     @Override
-    public Dorama createDorama() {return new PacoteDorama();}
+    public Fatura createFatura() {return new FaturaAnime();}
 }

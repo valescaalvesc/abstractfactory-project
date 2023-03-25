@@ -1,6 +1,8 @@
 package com.example.projeto;
 
-public class FaturaAnime implements Anime{
+public class FaturaAnime implements Fatura{
 
-    public String definirPlano() {return "Fatura Anime";}
+    public String emitir() {
+        return "Fatura Anime";
+    }
 }

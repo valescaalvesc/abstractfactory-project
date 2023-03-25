@@ -1,6 +1,8 @@
 package com.example.projeto;
 
-public class FaturaDorama implements Dorama{
+public class FaturaDorama implements Fatura{
 
-    public String definirPlano() {return "Fatura Dorama";}
+    public String emitir() {
+        return "Fatura Dorama";
+    }
 }

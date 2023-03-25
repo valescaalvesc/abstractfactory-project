@@ -1,8 +1,8 @@
 package com.example.projeto;
 
-public class PacoteDorama implements Dorama{
+public class PacoteDorama implements Pacote{
 
-    public String definirPlano() {
-        return "Pacote de Dorama";
+    public String emitir() {
+        return "Pacote Dorama";
     }
 }

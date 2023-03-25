@@ -2,15 +2,15 @@ package com.example.projeto;
 
 public class Cliente {
 
-    private Anime anime;
-    private Dorama dorama;
+    private Pacote pacote;
+    private Fatura fatura;
 
     public Cliente (FabricaAbstrata fabrica) {
-        this.anime = fabrica.createAnime();
-        this.dorama = fabrica.createDorama();
+        this.pacote = fabrica.createPacote();
+        this.fatura = fabrica.createFatura();
     }
 
-    public String definirPlanoAnime() {return this.anime.definirPlano();}
+    public String emitirPacote() {return this.pacote.emitir();}
 
-    public String definirPlanoDorama() {return this.dorama.definirPlano();}
+    public String emitirFatura() {return this.fatura.emitir();}
 }
