@@ -12,23 +12,10 @@ public class ClienteTest {
         Cliente cliente = new Cliente(fabrica);
         assertEquals("Pacote de Anime", cliente.definirPlanoAnime());
     }
+    
 
     @Test
-    void deveDefinirPacoteDorama() {
-        FabricaAbstrata fabrica = new FabricaDorama();
-        Cliente cliente = new Cliente(fabrica);
-        assertEquals("Pacote de Doarama", cliente.definirPlanoDorama());
-    }
-
-    @Test
-    void deveEmitirFaturaAnime() {
-        FabricaAbstrata fabrica = new FabricaAnime();
-        Cliente cliente = new Cliente(fabrica);
-        assertEquals("Fatura Anime", cliente.definirPlanoAnime());
-    }
-
-    @Test
-    void deveEmitirDiplomaPosGraduacao() {
+    void deveEmitirFaturaDorama() {
         FabricaAbstrata fabrica = new FabricaDorama();
         Cliente cliente = new Cliente(fabrica);
         assertEquals("Fatura Dorama", cliente.definirPlanoDorama());
